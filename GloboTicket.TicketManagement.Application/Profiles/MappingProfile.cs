@@ -1,4 +1,5 @@
 using AutoMapper;
+using GloboTicket.TicketManagement.Application.Features.Categories.Queries.GetCategoriesListWithEvents;
 using GloboTicket.TicketManagement.Application.Features.Events;
 using GloboTicket.TicketManagement.Domain.Entities;
 
@@ -11,5 +12,7 @@ public class MappingProfile : Profile
         CreateMap<Event, EventListVm>().ReverseMap();
         CreateMap<Event, EventDetailVm>().ReverseMap();
         CreateMap<Event, CategoryDto>();
+        CreateMap<Event, EventDetailVm>().ReverseMap();
+        CreateMap<Event, CategoryEventDto>().ReverseMap();
     }
 }
