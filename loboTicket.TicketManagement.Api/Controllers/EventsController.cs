@@ -3,6 +3,7 @@ using GloboTicket.TicketManagement.Application.Features.Events.Commands.UpdateEv
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using GloboTicket.TicketManagement.Application.Features.Events;
+using GloboTicket.TicketManagement.Application.Features.Events.Commands.DeleteEvent;
 
 namespace GloboTicket.TicketManagement.Api.Controllers
 {
