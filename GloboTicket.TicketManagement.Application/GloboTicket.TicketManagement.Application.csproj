@@ -12,6 +12,8 @@
 
     <ItemGroup>
       <PackageReference Include="AutoMapper" Version="11.0.1" />
+      <PackageReference Include="AutoMapper.Collection" Version="7.0.1" />
+      <PackageReference Include="AutoMapper.EF6" Version="2.1.1" />
       <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
       <PackageReference Include="FluentValidation" Version="10.3.6" />
       <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.3.6" />
@@ -21,8 +23,15 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Features\Events\Commands\DeleteEvent" />
       <Folder Include="Features\Orders\Commands" />
       <Folder Include="Features\Orders\Queries" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Include="..\..\..\Downloads\architecting-asp-dot-net-core-applications-best-practices\06\demos\end\GloboTicket.TicketManagement.Application\Features\Categories\Queries\GetCategoriesList\GetCategoriesListQueryHandler.cs">
+        <Link>Features\Categories\Queries\GetCategoriesList\GetCategoriesListQueryHandler.cs</Link>
+      </Compile>
     </ItemGroup>
 
 </Project>

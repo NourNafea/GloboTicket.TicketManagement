@@ -1,7 +1,8 @@
 ﻿
+using GloboTicket.TicketManagement.Application.Features.Categories.Commands.CreateCategory;
 using GloboTicket.TicketManagement.Application.Responses;
 
-namespace GloboTicket.TicketManagement.Application.Features.Categories.Commands.CreateCateogry;
+namespace GloboTicket.TicketManagement.Application.Features.Categories.Commands.CreateCategory;
 public class CreateCategoryCommandResponse: BaseResponse
     {
         public CreateCategoryCommandResponse(): base()
