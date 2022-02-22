@@ -1,9 +1,16 @@
-﻿using GloboTicket.TicketManagement.Application.Features.Events.Commands.CreateEvent;
-using GloboTicket.TicketManagement.Application.Features.Events.Commands.UpdateEvent;
-using MediatR;
-using Microsoft.AspNetCore.Mvc;
-using GloboTicket.TicketManagement.Application.Features.Events;
+﻿using GloboTicket.TicketManagement.Api.Utility;
+using GloboTicket.TicketManagement.Application.Features.Events.Commands.CreateEvent;
 using GloboTicket.TicketManagement.Application.Features.Events.Commands.DeleteEvent;
+using GloboTicket.TicketManagement.Application.Features.Events.Commands.UpdateEvent;
+using GloboTicket.TicketManagement.Application.Features.Events.Queries.GetEventDetail;
+using GloboTicket.TicketManagement.Application.Features.Events.Queries.GetEventsExport;
+using GloboTicket.TicketManagement.Application.Features.Events.Queries.GetEventsList;
+using MediatR;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace GloboTicket.TicketManagement.Api.Controllers
 {
@@ -61,8 +68,7 @@ namespace GloboTicket.TicketManagement.Api.Controllers
             await _mediator.Send(deleteEventCommand);
             return NoContent();
         }
-        
-        
+
         [HttpGet("export", Name = "ExportEvents")]
         [FileResultContentType("text/csv")]
         public async Task<FileResult> ExportEvents()
@@ -71,6 +77,5 @@ namespace GloboTicket.TicketManagement.Api.Controllers
 
             return File(fileDto.Data, fileDto.ContentType, fileDto.EventExportFileName);
         }
-        
     }
 }

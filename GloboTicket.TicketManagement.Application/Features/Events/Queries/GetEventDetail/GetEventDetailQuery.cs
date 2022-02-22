@@ -1,8 +1,10 @@
-using MediatR;
+﻿using MediatR;
+using System;
 
-namespace GloboTicket.TicketManagement.Application.Features.Events;
-
-public class GetEventDetailQuery : IRequest<EventDetailVm>
+namespace GloboTicket.TicketManagement.Application.Features.Events.Queries.GetEventDetail
 {
-    public Guid Id { get; set; }
+    public class GetEventDetailQuery: IRequest<EventDetailVm>
+    {
+        public Guid Id { get; set; }
+    }
 }

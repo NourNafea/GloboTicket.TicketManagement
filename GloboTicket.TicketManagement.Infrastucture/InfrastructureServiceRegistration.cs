@@ -4,17 +4,18 @@ using GloboTicket.TicketManagement.Infrastructure.Mail;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace GloboTicket.TicketManagement.Infrastructure;
-
-public static class InfrastructureServiceRegistration
+namespace GloboTicket.TicketManagement.Infrastructure
 {
-    public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
+    public static class InfrastructureServiceRegistration
     {
-        services.Configure<EmailSettings>(configuration.GetSection("EmailSettings"));
+        public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
+        {
+            services.Configure<EmailSettings>(configuration.GetSection("EmailSettings"));
 
-        services.AddTransient<IEmailService, EmailService>();
+            services.AddTransient<ICsvExporter, CsvExporter>();
+            services.AddTransient<IEmailService, EmailService>();
 
-        return services;
+            return services;
+        }
     }
 }
-

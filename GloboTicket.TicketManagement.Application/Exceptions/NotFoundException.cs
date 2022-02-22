@@ -1,11 +1,12 @@
-﻿
-namespace GloboTicket.TicketManagement.Application.Exceptions;
+﻿using System;
 
-public class NotFoundException : ApplicationException
+namespace GloboTicket.TicketManagement.Application.Exceptions
 {
-    public NotFoundException(string name, object key)
-        : base($"{name} ({key}) is not found")
+    public class NotFoundException : ApplicationException
     {
+        public NotFoundException(string name, object key)
+            : base($"{name} ({key}) is not found")
+        {
+        }
     }
 }
-

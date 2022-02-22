@@ -1,8 +1,12 @@
-﻿using GloboTicket.TicketManagement.Application.Features.Categories.Commands.CreateCategory;
+﻿using GloboTicket.TicketManagement.Application.Features.Categories.Commands.CreateCateogry;
 using GloboTicket.TicketManagement.Application.Features.Categories.Queries.GetCategoriesList;
 using GloboTicket.TicketManagement.Application.Features.Categories.Queries.GetCategoriesListWithEvents;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace GloboTicket.TicketManagement.Api.Controllers
 {

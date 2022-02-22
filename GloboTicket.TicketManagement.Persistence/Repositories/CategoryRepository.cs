@@ -6,21 +6,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace GloboTicket.TicketManagement.Persistence.Repositories;
-public class CategoryRepository : BaseRepository<Category>, ICategoryRepository
+namespace GloboTicket.TicketManagement.Persistence.Repositories
 {
-    public CategoryRepository(GloboTicketDbContext dbContext) : base(dbContext)
+    public class CategoryRepository : BaseRepository<Category>, ICategoryRepository
     {
-    }
-
-    public async Task<List<Category>> GetCategoriesWithEvents(bool includePassedEvents)
-    {
-        var allCategories = await _dbContext.Categories.Include(x => x.Events).ToListAsync();
-        if(!includePassedEvents)
+        public CategoryRepository(GloboTicketDbContext dbContext) : base(dbContext)
         {
-            allCategories.ForEach(p => p.Events.ToList().RemoveAll(c => c.Date < DateTime.Today));
         }
-        return allCategories;
+
+        public async Task<List<Category>> GetCategoriesWithEvents(bool includePassedEvents)
+        {
+            var allCategories = await _dbContext.Categories.Include(x => x.Events).ToListAsync();
+            if(!includePassedEvents)
+            {
+                allCategories.ForEach(p => p.Events.ToList().RemoveAll(c => c.Date < DateTime.Today));
+            }
+            return allCategories;
+        }
     }
 }
-

@@ -1,18 +1,19 @@
 ﻿using FluentValidation;
 
-namespace GloboTicket.TicketManagement.Application.Features.Events.Commands.UpdateEvent;
-public class UpdateEventCommandValidator : AbstractValidator<UpdateEventCommand>
+namespace GloboTicket.TicketManagement.Application.Features.Events.Commands.UpdateEvent
 {
-    public UpdateEventCommandValidator()
+    public class UpdateEventCommandValidator : AbstractValidator<UpdateEventCommand>
     {
-        RuleFor(p => p.Name)
-            .NotEmpty().WithMessage("{PropertyName} is required.")
-            .NotNull()
-            .MaximumLength(50).WithMessage("{PropertyName} must not exceed 50 characters.");
+        public UpdateEventCommandValidator()
+        {
+            RuleFor(p => p.Name)
+                .NotEmpty().WithMessage("{PropertyName} is required.")
+                .NotNull()
+                .MaximumLength(50).WithMessage("{PropertyName} must not exceed 50 characters.");
 
-        RuleFor(p => p.Price)
-            .NotEmpty().WithMessage("{PropertyName} is required.")
-            .GreaterThan(0);
+            RuleFor(p => p.Price)
+                .NotEmpty().WithMessage("{PropertyName} is required.")
+                .GreaterThan(0);
+        }
     }
 }
-

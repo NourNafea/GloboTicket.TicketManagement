@@ -1,11 +1,12 @@
-﻿
-namespace GloboTicket.TicketManagement.Application.Exceptions;
+﻿using System;
 
-public class BadRequestException: ApplicationException
+namespace GloboTicket.TicketManagement.Application.Exceptions
 {
-    public BadRequestException(string message): base(message)
+    public class BadRequestException: ApplicationException
     {
+        public BadRequestException(string message): base(message)
+        {
 
+        }
     }
 }
-

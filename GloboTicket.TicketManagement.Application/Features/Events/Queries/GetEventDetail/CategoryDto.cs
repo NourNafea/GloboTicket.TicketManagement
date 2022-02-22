@@ -1,7 +1,10 @@
-namespace GloboTicket.TicketManagement.Application.Features.Events;
+﻿using System;
 
-public class CategoryDto
+namespace GloboTicket.TicketManagement.Application.Features.Events.Queries.GetEventDetail
 {
-    public Guid Id { get; set; }
-    public string Name { get; set; }
+    public class CategoryDto
+    {
+        public Guid Id { get; set; }
+        public string Name { get; set; }
+    }
 }

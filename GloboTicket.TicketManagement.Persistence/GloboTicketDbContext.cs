@@ -1,7 +1,9 @@
 ﻿using GloboTicket.TicketManagement.Domain.Common;
 using GloboTicket.TicketManagement.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-
+using System;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace GloboTicket.TicketManagement.Persistence
 {
@@ -44,8 +46,7 @@ namespace GloboTicket.TicketManagement.Persistence
             modelBuilder.Entity<Category>().HasData(new Category
             {
                 CategoryId = conferenceGuid,
-                Name = "Conferences",
-             
+                Name = "Conferences"
             });
 
             modelBuilder.Entity<Event>().HasData(new Event
@@ -58,7 +59,6 @@ namespace GloboTicket.TicketManagement.Persistence
                 Description = "Join John for his farwell tour across 15 continents. John really needs no introduction since he has already mesmerized the world with his banjo.",
                 ImageUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/GloboTicket/banjo.jpg",
                 CategoryId = concertGuid
-                
             });
 
             modelBuilder.Entity<Event>().HasData(new Event

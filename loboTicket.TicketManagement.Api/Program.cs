@@ -1,4 +1,10 @@
-
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using Serilog;
+using System.Threading.Tasks;
 
 namespace GloboTicket.TicketManagement.Api
 {
@@ -10,10 +16,10 @@ namespace GloboTicket.TicketManagement.Api
                 .AddJsonFile("appsettings.json")
                 .Build();
 
-            // Log.Logger = new LoggerConfiguration()
-            //     .ReadFrom.Configuration(config)
-            //     .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day) 
-            //     .CreateLogger();
+            Log.Logger = new LoggerConfiguration()
+                .ReadFrom.Configuration(config)
+                .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day) 
+                .CreateLogger();
 
             var host = CreateHostBuilder(args).Build();
             
@@ -28,7 +34,7 @@ namespace GloboTicket.TicketManagement.Api
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                // .UseSerilog()
+             .UseSerilog()
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();

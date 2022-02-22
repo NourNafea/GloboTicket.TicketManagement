@@ -1,6 +1,7 @@
-﻿namespace GloboTicket.TicketManagement.Application.Models.Authentication;
-public class RegistrationResponse
+﻿namespace GloboTicket.TicketManagement.Application.Models.Authentication
 {
-    public string UserId { get; set; }
+    public class RegistrationResponse
+    {
+        public string UserId { get; set; }
+    }
 }
-

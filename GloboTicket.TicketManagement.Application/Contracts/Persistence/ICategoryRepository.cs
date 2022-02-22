@@ -1,8 +1,11 @@
-using GloboTicket.TicketManagement.Domain.Entities;
+﻿using GloboTicket.TicketManagement.Domain.Entities;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
-namespace GloboTicket.TicketManagement.Application.Contracts.Persistence;
-
-public interface ICategoryRepository : IAsyncRepository<Category>
+namespace GloboTicket.TicketManagement.Application.Contracts.Persistence
 {
-    Task<List<Category>> GetCategoriesWithEvents(bool includePassedEvents);
+    public interface ICategoryRepository : IAsyncRepository<Category>
+    {
+        Task<List<Category>> GetCategoriesWithEvents(bool includePassedEvents);
+    }
 }
