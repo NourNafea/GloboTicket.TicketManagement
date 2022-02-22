@@ -1,7 +1,7 @@
 using GloboTicket.TicketManagement.Api.Middleware;
 using GloboTicket.TicketManagement.Api.Utility;
 using GloboTicket.TicketManagement.Application;
-using GloboTicket.TicketManagement.Infrastructure;
+using GloboTicket.TicketManagement.Infrastucture;
 using GloboTicket.TicketManagement.Persistence;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;

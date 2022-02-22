@@ -23,10 +23,10 @@ namespace GloboTicket.TicketManagement.Api.Controllers
 
         [HttpGet("all", Name = "GetAllCategories")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<ActionResult<List<CategoryListVm>>> GetAllCategories()
+        public async Task<List<CategoryListVm>> GetAllCategories()
         {
-            var dtos = await _mediator.Send(new GetCategoriesListQuery());
-            return Ok(dtos);
+             return await _mediator.Send(new GetCategoriesListQuery());
+            
         }
 
         [HttpGet("allwithevents", Name = "GetCategoriesWithEvents")]

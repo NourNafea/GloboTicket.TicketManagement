@@ -5,5 +5,6 @@ namespace GloboTicket.TicketManagement.Application.Features.Categories.Queries.G
 {
     public class GetCategoriesListQuery : IRequest<List<CategoryListVm>>
     {
+        
     }
 }
