@@ -10,14 +10,14 @@ using System.Threading;
 using System.Threading.Tasks;
 using EmptyFiles;
 using Xunit;
-
+using Category = GloboTicket.TicketManagement.Domain.Entities.Category;
 
 namespace GloboTicket.TicketManagement.Application.UnitTests.Categories.Commands
 {
     public class CreateCategoryTests
     {
         private readonly IMapper _mapper;
-        private readonly Mock<IAsyncRepository<Domain.Entities.Category>> _mockCategoryRepository;
+        private readonly Mock<IAsyncRepository<Category>> _mockCategoryRepository;
 
         public CreateCategoryTests()
         {
