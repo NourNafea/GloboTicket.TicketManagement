@@ -2,6 +2,7 @@
 
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
+		<RootNamespace>loboTicket.TicketManagement.Api</RootNamespace>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -23,7 +24,7 @@
 	<ItemGroup>
 		<ProjectReference Include="..\GloboTicket.TicketManagement.Application\GloboTicket.TicketManagement.Application.csproj" />
 <!--		<ProjectReference Include="..\GloboTicket.TicketManagement.Infrastructure\GloboTicket.TicketManagement.Infrastucture.csproj" />-->
-		<ProjectReference Include="..\GloboTicket.TicketManagement.Infrastucture\GloboTicket.TicketManagement.Infrastucture.csproj" />
+		<ProjectReference Include="..\GloboTicket.TicketManagement.Infrastructure\GloboTicket.TicketManagement.Infrastructure.csproj" />
 		<ProjectReference Include="..\GloboTicket.TicketManagement.Persistence\GloboTicket.TicketManagement.Persistence.csproj" />
 	</ItemGroup>
 
