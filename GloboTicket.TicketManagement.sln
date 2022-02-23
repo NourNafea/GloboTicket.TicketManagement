@@ -28,7 +28,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.TicketManagemen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.TicketManagement.Persistence.IntegrationTests", "GloboTicket.TicketManagement.Persistence.IntegrationTests\GloboTicket.TicketManagement.Persistence.IntegrationTests.csproj", "{3B9AAAD6-B18F-41BA-A28C-C0CE950D1ADD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.TicketManagement.App", "..\..\Downloads\architecting-asp-dot-net-core-applications-best-practices (1) 2\08\demos\end\GloboTicket.TicketManagement.App\GloboTicket.TicketManagement.App.csproj", "{0798A6E7-F90D-4657-8EB1-E079849147C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.TicketManagement.App", "GloboTicket.TicketManagement.App\GloboTicket.TicketManagement.App.csproj", "{126937EA-5FDD-4970-B89A-4A11B618CE9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,7 +48,7 @@ Global
 		{2766214A-D4AF-41D4-9A31-8D900E93E67D} = {9B733F24-D73E-4A78-A039-D6A14ED2C483}
 		{978AF147-A3EC-4FA4-8E9E-D279EC749907} = {9B733F24-D73E-4A78-A039-D6A14ED2C483}
 		{3B9AAAD6-B18F-41BA-A28C-C0CE950D1ADD} = {9B733F24-D73E-4A78-A039-D6A14ED2C483}
-		{0798A6E7-F90D-4657-8EB1-E079849147C5} = {131E27A1-8FA4-423E-A64E-2A3BDAE8E0F9}
+		{126937EA-5FDD-4970-B89A-4A11B618CE9C} = {131E27A1-8FA4-423E-A64E-2A3BDAE8E0F9}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A4AA6576-B97C-481A-8445-729B8C8952EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -83,9 +83,9 @@ Global
 		{3B9AAAD6-B18F-41BA-A28C-C0CE950D1ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B9AAAD6-B18F-41BA-A28C-C0CE950D1ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B9AAAD6-B18F-41BA-A28C-C0CE950D1ADD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0798A6E7-F90D-4657-8EB1-E079849147C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0798A6E7-F90D-4657-8EB1-E079849147C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0798A6E7-F90D-4657-8EB1-E079849147C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0798A6E7-F90D-4657-8EB1-E079849147C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{126937EA-5FDD-4970-B89A-4A11B618CE9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{126937EA-5FDD-4970-B89A-4A11B618CE9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{126937EA-5FDD-4970-B89A-4A11B618CE9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{126937EA-5FDD-4970-B89A-4A11B618CE9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
