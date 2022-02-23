@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.TicketManagemen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.TicketManagement.Persistence.IntegrationTests", "GloboTicket.TicketManagement.Persistence.IntegrationTests\GloboTicket.TicketManagement.Persistence.IntegrationTests.csproj", "{3B9AAAD6-B18F-41BA-A28C-C0CE950D1ADD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.TicketManagement.App", "..\..\Downloads\architecting-asp-dot-net-core-applications-best-practices (1)\08\demos\end\GloboTicket.TicketManagement.App\GloboTicket.TicketManagement.App.csproj", "{01659E7F-26C2-4BAF-90F7-7A01B1D4813C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,6 +48,7 @@ Global
 		{2766214A-D4AF-41D4-9A31-8D900E93E67D} = {9B733F24-D73E-4A78-A039-D6A14ED2C483}
 		{978AF147-A3EC-4FA4-8E9E-D279EC749907} = {9B733F24-D73E-4A78-A039-D6A14ED2C483}
 		{3B9AAAD6-B18F-41BA-A28C-C0CE950D1ADD} = {9B733F24-D73E-4A78-A039-D6A14ED2C483}
+		{01659E7F-26C2-4BAF-90F7-7A01B1D4813C} = {131E27A1-8FA4-423E-A64E-2A3BDAE8E0F9}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A4AA6576-B97C-481A-8445-729B8C8952EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -80,5 +83,9 @@ Global
 		{3B9AAAD6-B18F-41BA-A28C-C0CE950D1ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B9AAAD6-B18F-41BA-A28C-C0CE950D1ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B9AAAD6-B18F-41BA-A28C-C0CE950D1ADD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01659E7F-26C2-4BAF-90F7-7A01B1D4813C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01659E7F-26C2-4BAF-90F7-7A01B1D4813C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01659E7F-26C2-4BAF-90F7-7A01B1D4813C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01659E7F-26C2-4BAF-90F7-7A01B1D4813C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
